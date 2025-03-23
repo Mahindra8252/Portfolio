@@ -106,6 +106,24 @@ h6 {
   font-weight: inherit;
 }
 
+
+.introduction {
+  width: 40vw;
+  overflow: hidden; 
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+}
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  text-align: justify;
+  word-wrap: break-word;
+  color: #bec0c0;
+ 
+}
+
+
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
@@ -1894,11 +1912,13 @@ video {
   }
 }
 
+
 @media (min-width: 768px) {
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+  
 
   .md\:ml-12 {
     margin-left: 3rem;
@@ -1956,59 +1976,23 @@ video {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:border-gray-600 {
-    --tw-border-opacity: 1;
-    border-color: rgb(75 85 99 / var(--tw-border-opacity));
+@media (max-width: 600px) {
+  
+  .introduction {
+    width: 70vw;
+    overflow: hidden; 
+    /* margin: auto; */
+    margin-top: 4vw;
+    margin-bottom: 4vw;
   }
-
-  .dark\:bg-gray-700 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  p {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    text-align: justify;
+    word-wrap: break-word;
+   
   }
-
-  .dark\:bg-blue-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-gray-400 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:placeholder-gray-400::-moz-placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-placeholder-opacity));
-  }
-
-  .dark\:placeholder-gray-400::placeholder {
-    --tw-placeholder-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-placeholder-opacity));
-  }
-
-  .dark\:hover\:bg-blue-700:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-  }
-
-  .dark\:focus\:border-blue-500:focus {
-    --tw-border-opacity: 1;
-    border-color: rgb(59 130 246 / var(--tw-border-opacity));
-  }
-
-  .dark\:focus\:ring-blue-500:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-  }
-
-  .dark\:focus\:ring-blue-800:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
-  }
+  .my-skills{
+    flex-direction: column;
+}
 }
